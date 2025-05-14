@@ -182,27 +182,22 @@ p {
   }
 
   .container-for-images {
-    width: 100%;
+    width: 100vw;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     overflow: hidden;
-    max-width: 479px;
   }
 
   .imgPrev,
   .imgActive,
   .imgNext {
-    flex-shrink: 0; /* Позволяет сжиматься при недостатке места */
-    z-index: unset;
+    flex-shrink: 0;
     transform: none;
     background-size: 100% 100%;
+    width: 305px;
+    height: 235px;
   }
 
-  .imgPrev img,
-  .imgActive img,
-  .imgNext img {
-    width: 305px;
-  }
   .words-container {
     max-width: 378px;
     display: grid;
